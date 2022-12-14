@@ -190,10 +190,7 @@ UPROGS=\
 	$U/_zombie\
 	$U/_copy\
 	$U/_exec\
-
-
-
-
+	$U/_list\
 
 ifeq ($(LAB),$(filter $(LAB), lock))
 UPROGS += \
