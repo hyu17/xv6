@@ -191,6 +191,7 @@ UPROGS=\
 	$U/_copy\
 	$U/_exec\
 	$U/_list\
+	$U/_sleep\
 
 ifeq ($(LAB),$(filter $(LAB), lock))
 UPROGS += \
