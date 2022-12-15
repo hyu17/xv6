@@ -192,6 +192,7 @@ UPROGS=\
 	$U/_exec\
 	$U/_list\
 	$U/_sleep\
+	$U/_pingpong\
 
 ifeq ($(LAB),$(filter $(LAB), lock))
 UPROGS += \
