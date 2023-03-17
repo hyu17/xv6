@@ -91,3 +91,15 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+
+uint64
+sys_trace(void)
+{
+  int mask;
+  argint(0, &mask);
+  struct proc* p = myproc();
+  p->umask = mask;
+  // printf("DEBUG: retrive syscall argument to mask: %d\n", mask);
+
+  return 0;
+}
